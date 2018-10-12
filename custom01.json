@@ -1,0 +1,20 @@
+{
+    "title": "Cap Lock to WASD",
+    "rule": [
+        {
+            "description": "Cap Lock to WASD",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": <%= from("caps_lock", ["spacebar"], ["caps_lock"]) %>,
+                    "to": <%= to([["caps_lock"]]) %>
+                },
+                {
+                  "type": "basic",
+                  "from": <%= from("caps_lock", [], ["any"]) %>,
+                  "to": <%= to([["left_option"]) %>
+              }
+            ]
+        }
+    ]
+}
