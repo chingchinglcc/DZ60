@@ -1,0 +1,61 @@
+{
+  "title": "MORE CUSTOM RULES",
+  "rules": [
+        {
+        "description": "SPACEBAR + left_shift to CAPS",
+        "manipulators": [
+        {
+            "type": "basic",
+            "from": {
+                "simultaneous": [
+                    {
+                        "key_code": "spacebar"
+                    },
+                    {
+                        "key_code": "left_shift"
+                    }
+                ]
+            },
+            "to": [
+            {
+                "key_code": "caps_lock"
+            }
+            ]
+        }
+            ]
+        },
+        {
+            "description": "CAPS_lock(right shift)to arrow key",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from" :{
+                        "key_code": "left_control"
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_shift"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "FIXED POSITION CAPS_LOCK",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from" :{
+                        "key_code": "caps_lock"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_control"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+

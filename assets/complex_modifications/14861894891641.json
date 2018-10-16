@@ -1,0 +1,53 @@
+{
+    "title": "Action keys & function",
+    "rules": [
+          {
+          "description": "esc + 1 to Volume up",
+          "manipulators": [
+          {
+              "type": "basic",
+              "from": {
+                  "simultaneous": [
+                      {
+                        "key_code": "escape"
+                      },
+                      {
+                            "key_code": "1"
+                      }
+                  ]
+              },
+              "to": [
+              {
+                  "key_code": "volume_increment"
+              }
+              ]
+          }
+              ]
+          },
+          {
+              "description": "esc + 2 to Volume down",
+              "manipulators": [
+                  {
+                      "type": "basic",
+                      "from" :{
+                        "simultaneous": [
+                            {
+                                "key_code": "escape"
+                            },
+                            {
+                                "key_code": "2"
+                            }
+                        ]
+                    },
+                      "to": [
+                          {
+                              "key_code": "volume_decrement"
+                          }
+                      ]
+                  }
+              ]
+          }
+      ]
+  }
+  
+  
